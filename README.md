@@ -1,6 +1,8 @@
 # Avatargen
 
-![avatar](./assets/golang-is-awesome.svg)
+<div align="center">
+	<img src="./assets/golang-is-awesome.svg" alt="avatar" />
+</div>
 
 This is a simple project to generate unique 300x300 avatars for any input string, havily inspired by [loweisz's generate-avatar](https://github.com/loweisz/generate-avatar/tree/6b48f98117bfa0cbbf38954c98e16b09b0906df8).
 
