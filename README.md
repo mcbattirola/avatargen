@@ -1,6 +1,6 @@
 # Avatargen
 
-This is a simple project to generate unique avatars for any input string, havily inspired by [loweisz's generate-avatar](https://github.com/loweisz/generate-avatar/tree/6b48f98117bfa0cbbf38954c98e16b09b0906df8).
+This is a simple project to generate unique 300x300 avatars for any input string, havily inspired by [loweisz's generate-avatar](https://github.com/loweisz/generate-avatar/tree/6b48f98117bfa0cbbf38954c98e16b09b0906df8).
 
 ### How to use
 
@@ -20,7 +20,21 @@ fmt.Println(svg)
 */
 ```
 
-The SVGs are created based on a MD5 hash from the input string, so its ~aways~ unique. 
+See the example in ```cmd/avatar-gen/main``` to save it as a .svg file.
+
+If you just want to generate your avatar, without using the package, you can download the source code and run ```main``` with a string argument: 
+
+```
+go run cmd/avatar/main.go mystring
+```
+
+it will create a file ```mystring.svg```
+
+### Avatars
+
+The SVGs avatars are created based on a MD5 hash from the input string, so it should aways be unique. 
 
 There's no randomness, so each input produce aways the same output. 
 This means you don't have to store it and can run everytime you need.
+
+The avatars have currently a fixed size of 300x300.
